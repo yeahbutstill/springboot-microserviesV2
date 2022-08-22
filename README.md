@@ -27,3 +27,11 @@ limits-service.minimum=5
 limits-service.maximum=995
 
 ```
+
+```shell
+# Currency Exchange Service
+http://localhost:8000/currency-exchange/from/USD/to/IDR
+
+# Currency Conversion Service
+http://localhost:8000/currency-exchange/from/USD/to/IDR/quantity/10
+```
