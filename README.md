@@ -65,4 +65,12 @@ http://localhost:8100/yeahbutstill/api/v1/currency-conversion/from/USD/to/IDR/qu
 
 # Currency Exchange Service
 http://localhost:8001/yeahbutstill/api/v1/currency-exchange/from/USD/to/IDR
+
+# Eureka
+http://localhost:8761
+
+# Api-Gateway
+http://localhost:8765/CURRENCY-EXCHANGE/yeahbutstill/api/v1/currency-exchange/from/USD/to/IDR
+http://localhost:8765/CURRENCY-CONVERSION/yeahbutstill/api/v1/currency-conversion/from/USD/to/IDR/quantity/10
+http://localhost:8765/CURRENCY-CONVERSION/yeahbutstill/api/v1/currency-conversion-feign/from/USD/to/IDR/quantity/10
 ```
