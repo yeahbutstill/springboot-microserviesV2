@@ -1,7 +1,7 @@
 package com.yeahbutstill.currencyexchangeservice.controller;
 
 import com.yeahbutstill.currencyexchangeservice.bean.CurrencyExchange;
-import lombok.RequiredArgsConstructor;
+import com.yeahbutstill.currencyexchangeservice.dao.CurrencyExchangeDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -10,27 +10,27 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
-
 @Slf4j
 @RestController
 @RequestMapping("/currency-xchange/api/v1")
 public class CurrencyExchangeController {
 
     @Autowired
+    private CurrencyExchangeDao dao;
+    @Autowired
     private Environment environment;
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
-    public CurrencyExchange currencyExchange(@PathVariable String from, @PathVariable String to) {
+    public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to) {
 
-        return CurrencyExchange.builder()
-                .id(1000L)
-                .from(from)
-                .to(to)
-                .conversionMultiple(BigDecimal.valueOf(0.000067041269))
-                .environment(environment.getProperty("local.server.port"))
-                .build();
+        CurrencyExchange currencyExchange = dao.findByFromAndTo(from, to);
+        if (currencyExchange == null) {
+            throw new RuntimeException("Unable to Find data for " + from + " to " + to);
+        }
+        String port = environment.getProperty("local.server.port");
+        currencyExchange.setEnvironment(port);
 
+        return currencyExchange;
     }
 
 }
