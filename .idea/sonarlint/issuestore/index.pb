@@ -12,8 +12,6 @@ kcurrency-exchange-service/src/main/java/com/yeahbutstill/currencyexchangeservic
 gcurrency-exchange-service/src/main/java/com/yeahbutstill/currencyexchangeservice/bean/StatusRecord.java,3/3/3389d553a8a0bffd836eb7160fc3efe85fec04d8
 ù
 mcurrency-exchange-service/src/main/java/com/yeahbutstill/currencyexchangeservice/dao/CurrencyExchangeDao.java,a/1/a13e27a83cbba5f5a47427b59f218733d1fcdc57
-g
-7currency-exchange-service/currency-exchange-service.iml,3/9/397a8b6f45c0074ff0ea68e73acf6699e4b8ebc2
 R
 "currency-exchange-service/mvnw.cmd,f/f/ff916c62d6a99d85e931653b77c7f8314536e210
 V
