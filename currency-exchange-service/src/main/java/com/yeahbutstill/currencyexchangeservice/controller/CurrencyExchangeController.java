@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/currency-xchange/api/v1")
+@RequestMapping("/yeahbutstill/api/v1")
 public class CurrencyExchangeController {
 
     @Autowired

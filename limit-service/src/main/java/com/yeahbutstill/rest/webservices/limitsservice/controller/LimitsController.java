@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/limits/api/v1")
+@RequestMapping("/yeahbutstill/api/v1")
 @RequiredArgsConstructor
 public class LimitsController {
 

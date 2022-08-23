@@ -28,14 +28,6 @@ limits-service.maximum=995
 
 ```
 
-```shell
-# Currency Exchange Service
-http://localhost:8000/currency-exchange/from/USD/to/IDR
-
-# Currency Conversion Service
-http://localhost:8000/currency-exchange/from/USD/to/IDR/quantity/10
-```
-
 ### Setup Docker MySQL
 ```shell
  docker run --rm \
@@ -49,6 +41,8 @@ http://localhost:8000/currency-exchange/from/USD/to/IDR/quantity/10
   mysql
 ```
 
+### Insert
+
 ```mysql
 insert into currency_exchange (currency_from, currency_to, conversion_multiple, environment)
 values ('USD', 'IDR', 14895.05, '');
@@ -58,4 +52,13 @@ insert into currency_exchange (currency_from, currency_to, conversion_multiple, 
 values ('EUR', 'IDR', 14808.21, '');
 insert into currency_exchange (currency_from, currency_to, conversion_multiple, environment)
 values ('AUD', 'IDR', 10273.95, '');
+```
+
+### API
+```text
+# Currency Conversion Service
+http://localhost:8100/yeahbutstill/api/v1/currency-conversion/from/USD/to/IDR/quantity/10
+
+# Currency Exchange Service
+http://localhost:8001/yeahbutstill/api/v1/currency-exchange/from/USD/to/IDR
 ```
