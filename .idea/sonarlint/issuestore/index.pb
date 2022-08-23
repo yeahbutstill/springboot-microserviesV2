@@ -16,8 +16,6 @@ g
 7currency-exchange-service/currency-exchange-service.iml,3/9/397a8b6f45c0074ff0ea68e73acf6699e4b8ebc2
 R
 "currency-exchange-service/mvnw.cmd,f/f/ff916c62d6a99d85e931653b77c7f8314536e210
-›
-kcurrency-exchange-service/src/main/java/com/yeahbutstill/currencyexchangeservice/bean/CurrencyExchange.java,c/1/c1ad1a657eea4700c2635148c984242d8b0ae8de
 V
 &currency-conversion-service/.gitignore,1/0/107b605ac43ab5806970a43335c11700020f5590
 •
