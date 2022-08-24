@@ -109,3 +109,18 @@ On Linux, you can also run the following command to activate the changes to grou
 ```shell
 newgrp docker
 ```
+### Build image
+```shell
+mvn spring-boot:build-image -DskipTests
+```
+
+### Run image
+```shell
+docker run -p 8001:8001 docker.io/2819930922/yeahbutstill-currency-exchange-service:0.0.1-SNAPSHOT
+```
+
+### Using Docker Compose
+```shell
+# in root with file docker-compose.yml
+docker compose up
+```
