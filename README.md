@@ -86,7 +86,26 @@ http://localhost:8765/currency-conversion/yeahbutstill/api/v1/currency-conversio
 http://localhost:8765/currency-conversion/yeahbutstill/api/v1/currency-conversion-feign/from/USD/to/IDR/quantity/10
 ```
 
-## Zipkin
+### Zipkin
 ```shell
 docker run -p 9411:9411 openzipkin/zipkin
+```
+
+### Build Docker Image 
+To create the docker group and add your user:
+```shell
+sudo groupadd docker
+```
+
+Add your user to the docker group.
+```shell
+sudo usermod -aG docker $USER
+```
+
+Log out and log back in so that your group membership is re-evaluated.
+If testing on a virtual machine, it may be necessary to restart the virtual machine for changes to take effect.
+On a desktop Linux environment such as X Windows, log out of your session completely and then log back in.
+On Linux, you can also run the following command to activate the changes to groups:
+```shell
+newgrp docker
 ```
