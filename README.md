@@ -85,3 +85,8 @@ http://localhost:8765/currency-exchange/yeahbutstill/api/v1/currency-exchange/fr
 http://localhost:8765/currency-conversion/yeahbutstill/api/v1/currency-conversion/from/USD/to/IDR/quantity/10
 http://localhost:8765/currency-conversion/yeahbutstill/api/v1/currency-conversion-feign/from/USD/to/IDR/quantity/10
 ```
+
+## Zipkin
+```shell
+docker run -p 9411:9411 openzipkin/zipkin
+```

@@ -23,6 +23,8 @@ public class CurrencyExchangeController {
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to) {
 
+        log.info("retriveExchangeValue called with {} to {}", from, to);
+
         CurrencyExchange currencyExchange = dao.findByFromAndTo(from, to);
         if (currencyExchange == null) {
             throw new RuntimeException("Unable to Find data for " + from + " to " + to);
