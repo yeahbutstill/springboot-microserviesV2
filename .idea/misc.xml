@@ -5,6 +5,7 @@
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
     <list size="0" />
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -14,6 +15,8 @@
         <option value="$PROJECT_DIR$/currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/naming-server/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter1/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/functional-programming/pom.xml" />
       </list>
     </option>
   </component>

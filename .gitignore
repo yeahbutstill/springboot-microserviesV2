@@ -33,5 +33,5 @@ build/
 .vscode/
 
 ### Docker ###
-/docker
-/storage
+/chapter2/docker
+/chapter2/storage
