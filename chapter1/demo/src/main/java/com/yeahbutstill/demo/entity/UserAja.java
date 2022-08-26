@@ -10,20 +10,20 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Data
-@Entity(name = "Course_Details")
+@Entity(name = "user_aja")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Course {
+public class UserAja {
 
     @Id
-    private Long id;
+    private String id;
 
     @NotNull
-    @Column(name = "name")
-    private String name;
+    @Column(name = "username")
+    private String username;
 
     @NotNull
-    @Column(name = "author")
-    private String author;
+    @Column(name = "email")
+    private String email;
 
 }
