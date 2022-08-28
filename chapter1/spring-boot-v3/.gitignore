@@ -31,8 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Docker ###
-/chapter1/spring-boot-v3/springbootdb-data
-/chapter2/docker
-/chapter2/storage

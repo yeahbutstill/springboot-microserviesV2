@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/chapter1/demo/pom.xml" />
         <option value="$PROJECT_DIR$/functional-programming/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter1/spring-boot-v3/pom.xml" />
       </list>
     </option>
   </component>

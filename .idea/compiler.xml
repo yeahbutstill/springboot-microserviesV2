@@ -13,14 +13,15 @@
         <module name="api-gateway" />
         <module name="currency-exchange-service" />
         <module name="limit-service" />
-        <module name="demo" />
         <module name="naming-server" />
+        <module name="spring-boot-v3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="17" />
       <module name="currency-conversion-service" target="17" />
       <module name="currency-exchange-service" target="17" />
+      <module name="demo" target="17" />
       <module name="limit-service" target="17" />
       <module name="naming-server" target="17" />
       <module name="spring-cloud-config-server" target="17" />
@@ -34,6 +35,7 @@
       <module name="demo" options="-parameters" />
       <module name="limit-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
+      <module name="spring-boot-v3" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
     </option>
   </component>
