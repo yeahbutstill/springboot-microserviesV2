@@ -1,5 +1,6 @@
 package com.yeahbutstill.springbootv3.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -25,15 +26,18 @@ public class User {
     @NotBlank
     @NotEmpty
     @Size(min = 4, message = "Name should have atleast 4 characters")
+    @JsonProperty("user_name")
     private String name;
 
     @NotBlank
     @NotEmpty
     @Email(message = "Mail not valid")
+    @JsonProperty
     private String email;
 
     @NotNull
     @Past(message = "Birth date should be in the past")
+    @JsonProperty("birth_date")
     private LocalDate birthDate;
 
     @Override

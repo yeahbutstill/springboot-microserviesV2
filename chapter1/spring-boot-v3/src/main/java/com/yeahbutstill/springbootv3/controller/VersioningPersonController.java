@@ -37,32 +37,32 @@ public class VersioningPersonController {
                 .build();
     }
 
-    @GetMapping(path = "/persons/header", headers = "X-API-VERSION=1")
-    public PersonV1 getOfPersonV1ReqHeader() {
-        return PersonV1.builder()
-                .firstName("Dani Setiawan")
-                .build();
-    }
-
-    @GetMapping(path ="/persons/header", headers = "X-API-VERSION=2")
-    public PersonV2 getOfPersonV2ReqHeader() {
-        return PersonV2.builder()
-                .name(new Name("Dani", "Setiawan"))
-                .build();
-    }
-
-    @GetMapping(path = "/persons/accept-header", produces = "application/vnd.company.app-v1+json")
-    public PersonV1 getOfPersonV1AcceptHeader() {
-        return PersonV1.builder()
-                .firstName("Dani Setiawan")
-                .build();
-    }
-
-    @GetMapping(path ="/persons/accept-header", produces = "application/vnd.company.app-v2+json")
-    public PersonV2 getOfPersonV2AcceptHeader() {
-        return PersonV2.builder()
-                .name(new Name("Dani", "Setiawan"))
-                .build();
-    }
+//    @GetMapping(path = "/persons/header", headers = "X-API-VERSION=1")
+//    public PersonV1 getOfPersonV1ReqHeader() {
+//        return PersonV1.builder()
+//                .firstName("Dani Setiawan")
+//                .build();
+//    }
+//
+//    @GetMapping(path ="/persons/header", headers = "X-API-VERSION=2")
+//    public PersonV2 getOfPersonV2ReqHeader() {
+//        return PersonV2.builder()
+//                .name(new Name("Dani", "Setiawan"))
+//                .build();
+//    }
+//
+//    @GetMapping(path = "/persons/accept-header", produces = "application/vnd.company.app-v1+json")
+//    public PersonV1 getOfPersonV1AcceptHeader() {
+//        return PersonV1.builder()
+//                .firstName("Dani Setiawan")
+//                .build();
+//    }
+//
+//    @GetMapping(path ="/persons/accept-header", produces = "application/vnd.company.app-v2+json")
+//    public PersonV2 getOfPersonV2AcceptHeader() {
+//        return PersonV2.builder()
+//                .name(new Name("Dani", "Setiawan"))
+//                .build();
+//    }
 
 }
