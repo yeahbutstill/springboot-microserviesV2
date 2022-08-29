@@ -1,7 +1,7 @@
 package com.yeahbutstill.springbootv3.controller;
 
 import com.yeahbutstill.springbootv3.dao.UserDaoService;
-import com.yeahbutstill.springbootv3.entity.User;
+import com.yeahbutstill.springbootv3.entity.UserHardcode;
 import com.yeahbutstill.springbootv3.exceptions.UserNotFoundException;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,19 +22,19 @@ public class UserResource {
     private UserDaoService service;
 
     @GetMapping("/users")
-    public List<User> retrieveAllUsers() {
+    public List<UserHardcode> retrieveAllUsers() {
         return service.findAll();
     }
 
     @GetMapping("/users/{id}")
-    public EntityModel<User> retrieveUser(@PathVariable String id) {
+    public EntityModel<UserHardcode> retrieveUser(@PathVariable String id) {
 
-        User user = service.findOne(id);
-        if (user == null) {
+        UserHardcode userHardcode = service.findOne(id);
+        if (userHardcode == null) {
             throw new UserNotFoundException("id:" + id);
         }
 
-        EntityModel<User> userEntityModel = EntityModel.of(user);
+        EntityModel<UserHardcode> userEntityModel = EntityModel.of(userHardcode);
         WebMvcLinkBuilder webMvcLinkBuilder = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass())
                 .retrieveAllUsers());
         userEntityModel.add(webMvcLinkBuilder.withRel("all-users"));
@@ -49,8 +49,8 @@ public class UserResource {
     }
 
     @PostMapping("/users")
-    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
-        User savedUser = service.save(user);
+    public ResponseEntity<UserHardcode> createUser(@Valid @RequestBody UserHardcode userHardcode) {
+        UserHardcode savedUser = service.save(userHardcode);
         // users/4 => /users/{id}, user.getId
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()

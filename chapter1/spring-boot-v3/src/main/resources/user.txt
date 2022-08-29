@@ -1,0 +1,15 @@
+insert into users(id, birth_date, email, name) VALUES ('10001', '1993-08-29', 'danil@yeahbutstill.com', 'Dani');
+insert into users(id, birth_date, email, name) VALUES ('10002', '1993-08-29', 'danil@yeahbutstill.com', 'Maya');
+insert into users(id, birth_date, email, name) VALUES ('10003', '1993-08-29', 'danil@yeahbutstill.com', 'Winda');
+insert into users(id, birth_date, email, name) VALUES ('10004', '1993-08-29', 'danil@yeahbutstill.com', 'Sehu');
+insert into users(id, birth_date, email, name) VALUES ('10005', '1993-08-29', 'danil@yeahbutstill.com', 'Winda');
+insert into users(id, birth_date, email, name) VALUES ('10006', '1993-08-29', 'danil@yeahbutstill.com', 'Aristo');
+insert into users(id, birth_date, email, name) VALUES ('10007', '1993-08-29', 'danil@yeahbutstill.com', 'Ana');
+
+insert into post(id, description, user_id) VALUES ('20001', 'I want to learn AWS', 10001);
+insert into post(id, description, user_id) VALUES ('20002', 'I want to learn Docker', 10001);
+insert into post(id, description, user_id) VALUES ('20003', 'I want to learn Kubernetes', 10001);
+insert into post(id, description, user_id) VALUES ('20004', 'I want to learn PostgreSQL', 10001);
+insert into post(id, description, user_id) VALUES ('20005', 'I want to learn DevOps', 10001);
+insert into post(id, description, user_id) VALUES ('20006', 'I want to learn AWS', 10002);
+insert into post(id, description, user_id) VALUES ('20007', 'I want to learn AWS', 10003);
