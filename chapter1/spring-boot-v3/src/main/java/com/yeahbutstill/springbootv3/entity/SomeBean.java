@@ -1,7 +1,6 @@
 package com.yeahbutstill.springbootv3.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonFilter;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -14,13 +13,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonIgnoreProperties({"field", "field"})
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
 
     @NotNull
     @NotBlank
     @NotEmpty
-    private String field;
+    private String field1;
 
     @NotNull
     @NotBlank
